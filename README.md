@@ -61,3 +61,9 @@ Hapi gère dans la session utilisateur la pagination des réponses au travers de
 C'est élément est inutilisable dans Quakus qui est sessionless de plus il est bogué, la réponse ne fournit pas la bonne URL pour la page suivante.
 
 Ce point est entièrement à revoir.
+
+##Build & run
+
+     ./mvnw install -Dquarkus.container-image.build=true -Dquarkus.container-image.build=true -Dquarkus.container-image.group=fhir
+
+Utiliser le fichier docker-compose.yml pour démarrer le serveur.
