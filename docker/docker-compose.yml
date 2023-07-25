@@ -75,6 +75,16 @@ services:
     networks:
       - ddev
     tty: true
+  organization:
+    container_name: fhir_organization
+    image: fhir/fhir-organization:1.0.0-SNAPSHOT
+    volumes:
+      - '${DDEV_LOG-./log}/organization/:/var/log/nginx/'
+    ports:
+      - '${APTMT_PORT-8083}:8080'
+    networks:
+      - ddev
+    tty: true
 networks:
   ddev:
     driver: bridge
