@@ -4,3 +4,4 @@ target
 .project
 .classpath
 *.log
+docker/work_dir
